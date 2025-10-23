@@ -19,7 +19,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY app.py .
 
 # Download Whisper model trước khi chạy (để không phải download mỗi lần restart)
-RUN python -c "import whisper; whisper.load_model('small')"
+RUN python -c "import whisper; whisper.load_model('tiny')"
 
 # Expose port
 EXPOSE 7860

@@ -7,9 +7,9 @@ import json
 from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse
 
-# Load Whisper model (small model - balance giữa tốc độ và độ chính xác)
+# Load Whisper model (tiny model - tối ưu cho free tier 512MB RAM)
 print("Đang load Whisper model...")
-model = whisper.load_model("small")
+model = whisper.load_model("tiny")
 print("✅ Đã load Whisper model thành công!")
 
 def transcribe_audio(audio_file):
