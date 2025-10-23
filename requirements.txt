@@ -1,0 +1,8 @@
+openai-whisper==20231117
+gradio==4.19.2
+torch==2.2.0
+torchaudio==2.2.0
+ffmpeg-python==0.2.0
+numpy==1.24.3
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
